@@ -1,0 +1,38 @@
+{
+  "name": "lebms",
+  "version": "1.0.0",
+  "description": "Laboratory Equipment Booking & Maintenance System (LEBMS) - GTU Semester 5 ADBMS Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "setup": "node scripts/setup-db.js",
+    "verify-db": "node scripts/verify-db.js",
+    "pretest": "npm run setup",
+    "test": "node --test tests/api.test.js",
+    "posttest": "npm run setup"
+  },
+  "keywords": [
+    "adbms",
+    "mysql",
+    "mongodb",
+    "express",
+    "laboratory-equipment",
+    "booking-system"
+  ],
+  "author": "GTU Students",
+  "license": "ISC",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "mongodb": "^6.8.0",
+    "mysql2": "^3.11.0",
+    "xmlbuilder2": "^3.1.1",
+    "xmllint-wasm": "^2.1.2",
+    "xpath": "^0.0.34"
+  }
+}
